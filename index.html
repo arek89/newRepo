@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Test Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="#" />
+
+    <title>Test Project</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+    <!--main page styles-->
+    <link href="./dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="row search-box-row">
+                <div class="col-md-6 text-center">
+                    <div class="input-group">
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="search-box"
+                                placeholder="Tag to search..."
+                                aria-label="Tag"
+                                pattern=".*[^ ].*"
+                                required>
+
+                        <div class="input-group-append">
+                            <button
+                                    class="btn btn-outline-secondary btn-search"
+                                    id="search-btn"
+                                    type="button">
+
+                                <img src="./assets/search-icon.svg" class="icon" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div id="tags" class="text-center"></div>
+                </div>
+            </div>
+
+            <div class="row" id="results"></div>
+        </div>
+    </div>
+
+    <script src="./dist/js/bundle.js"></script>
+</body>
+</html>
